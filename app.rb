@@ -22,8 +22,8 @@ end
  get '/multiply/:number1/:number2' do
   @num1 = params[:number1]
   @num2 = params[:number2]
-  product = @num1 * @num2
-  return product
+  @product = @num1 * @num2
+  return @product
 end
 
 
